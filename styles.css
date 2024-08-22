@@ -1,0 +1,151 @@
+/* Allgemeine Stile */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0e1d2c;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #1b2b3a;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1em;
+    color: #a1a1a1;
+    margin-bottom: 10px;
+}
+
+.version, .author {
+    font-size: 0.9em;
+    color: #9e9e9e;
+}
+
+/* Formularstile */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group select, .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #26374d;
+    color: #ffffff;
+    font-size: 1em;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4caf50;
+    color: #ffffff;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button i {
+    margin-right: 8px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Zurück-Button */
+.back-button {
+    margin-top: 20px;
+    background-color: #f44336;
+}
+
+.back-button:hover {
+    background-color: #e53935;
+}
+
+/* Ergebnisbox */
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #26374d;
+    color: #ffffff;
+    font-size: 1em;
+}
+/* Grundlegendes Styling für das Dropdown-Menü */
+.language-settings {
+    margin-bottom: 20px;
+}
+
+.language-select {
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    outline: none;
+}
+
+.language-select:focus {
+    border-color: #007bff;
+    background-color: #e9ecef;
+}
+
+.language-select option {
+    font-size: 16px;
+}
+
+.label {
+    font-weight: bold;
+}
+/* CSS für das Bild */
+#image-container {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 10; /* Damit das Bild über anderen Inhalten liegt */
+}
+
+#main-image {
+    max-width: 200px; /* Kleine Bildgröße */
+    height: auto;
+}

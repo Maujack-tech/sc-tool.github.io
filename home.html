@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star-Transport & Handelsrechner</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="header-title"><i class="fas fa-space-shuttle"></i> Star-Transport & Handelsrechner</h1>
+            <p id="header-description">Plane deine Routen und maximiere deinen Profit im Universum.</p>
+            <p class="version">Version 1.4</p>
+            <p class="author">By Maujack</p>
+            <p class="support">E-Mail: star-transport@web.de</p>
+        </header>
+
+        <div class="language-settings">
+            <label for="language-select" id="language-label"><i class="fas fa-globe"></i> Sprache:</label>
+            <select id="language-select" class="language-select">
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+
+        <form>
+            <div class="form-group">
+                <label id="from-label" for="from-location"><i class="fas fa-map-marker-alt"></i> Von:</label>
+                <select id="from-location">
+                    <optgroup label="Planeten">
+                        <option value="Hurston">Hurston</option>
+                        <option value="ArcCorp">ArcCorp</option>
+                        <option value="mikroTech">mikroTech</option>
+                        <option value="Crusader">Crusader</option>
+                    </optgroup>
+                    <optgroup label="Raumstationen">
+                        <option value="MIC L1">MIC L1</option>
+                        <option value="HUR L1">HUR L1</option>
+                        <option value="ARC L1">ARC L1</option>
+                        <option value="CRU L1">CRU L1</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label id="to-label" for="to-location"><i class="fas fa-map-signs"></i> Nach:</label>
+                <select id="to-location">
+                    <optgroup label="Planeten">
+                        <option value="Hurston">Hurston</option>
+                        <option value="ArcCorp">ArcCorp</option>
+                        <option value="mikroTech">mikroTech</option>
+                        <option value="Crusader">Crusader</option>
+                    </optgroup>
+                    <optgroup label="Raumstationen">
+                        <option value="MIC L1">MIC L1</option>
+                        <option value="HUR L1">HUR L1</option>
+                        <option value="ARC L1">ARC L1</option>
+                        <option value="CRU L1">CRU L1</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label id="commodity-label" for="commodity"><i class="fas fa-box"></i> Warenart:</label>
+                <select id="commodity">
+                    <option value="Titanium">Titanium</option>
+                    <option value="Laranite">Laranite</option>
+                    <option value="Agricium">Agricium</option>
+                    <option value="Gold">Gold</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label id="ship-label" for="ship"><i class="fas fa-ship"></i> Schiff:</label>
+                <select id="ship">
+                    <option value="Aurora">Aurora (20 SCU)</option>
+                    <option value="Cutlass Black">Cutlass Black (30 SCU)</option>
+                    <option value="Andromeda">Andromeda (133 SCU)</option>
+                    <option value="Caterpillar">Caterpillar (288 SCU)</option>
+                    <option value="Star Runner">Star Runner (164 SCU)</option>
+                    <option value="Freelancer MAX">Freelancer MAX (120 SCU)</option>
+                    <option value="Vulture">Vulture (36 SCU)</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="calculateRoute()"><i class="fas fa-calculator"></i> <span id="calculate-button-text">Route & Preis Berechnen</span></button>
+        </form>
+
+        <div id="result" class="result-box"></div>
+
+        <button class="back-button" onclick="window.location.href='index.html'">
+            <i class="fas fa-arrow-left"></i> <span id="back-button-text">Zurück</span>
+        </button>
+    </div>
+    <script src="script.js"></script>
+    <!-- Container für das Bild -->
+    <div id="image-container">
+        <img src="MadeByTheCommunity_White.jpg" alt="Star Citizen" id="main-image">
+        <p class="fanseite">Dies ist eine inoffizielle Fansite.</p>
+    </div>
+
+    <script src="script.js"></script>
+ 
+</body>
+</html>
